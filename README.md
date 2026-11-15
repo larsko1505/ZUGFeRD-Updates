@@ -1,6 +1,6 @@
 # ZUGFeRD Rechnungsstudio – Updates
 
-**Aktueller Programmstand: 1.1.12 (15. November 2026)**
+**Aktueller Programmstand: 1.1.13 (15. November 2026)**
 
 Dieses GitHub-Repository ist der **öffentliche Verteilungskanal für verschlüsselte Programm- und Excel-Vorlagenupdates** des ZUGFeRD Rechnungsstudios für Hansen Transporte. Die Original-Excel-Dateien und der ausführbare Windows-Installer werden **nicht unverschlüsselt** als öffentliche Release-Dateien bereitgestellt.
 
@@ -8,7 +8,7 @@ Dieses GitHub-Repository ist der **öffentliche Verteilungskanal für verschlüs
 
 | Bestandteil | Freigabe | Inhalt |
 | --- | --- | --- |
-| Rechnungsstudio | [Programm 1.1.12](https://github.com/larsko1505/ZUGFeRD-Updates/releases/tag/programm-v1.1.12) | AES-256-GCM-verschlüsselter Setup-Download `.zufexe` |
+| Rechnungsstudio | [Programm 1.1.13](https://github.com/larsko1505/ZUGFeRD-Updates/releases/tag/programm-v1.1.13) | AES-256-GCM-verschlüsselter Setup-Download `.zufexe` |
 | Excel-Rechnungsvorlagen | [Vorlagenrevision 1](https://github.com/larsko1505/ZUGFeRD-Updates/releases/tag/vorlagen-v1) | AES-256-GCM-verschlüsseltes Paket mit fünf `.xlsm`-Vorlagen (`.zufenc`) |
 
 Die jeweils gültigen **digital signierten** Updateinformationen liegen in [`programm_verschluesselt.json`](programm_verschluesselt.json) und [`vorlagen_verschluesselt.json`](vorlagen_verschluesselt.json). Die Anwendung prüft die Ed25519-Signatur, Versionsnummer und SHA-256-Prüfsummen. Zum Entschlüsseln wird ein einmalig eingerichteter, **nicht im Installer enthaltener** Schlüssel benötigt.
@@ -19,7 +19,9 @@ Die jeweils gültigen **digital signierten** Updateinformationen liegen in [`pro
 
 Das Windows-Programm erstellt aus fünf verschieden aufgebauten Excel-Rechnungsvorlagen ZUGFeRD-/Factur-X-Rechnungen mit eingebetteter XML nach EN 16931 und PDF/A-3. Es unterstützt Excel-Arbeitskopien, PDF-/XML-Erstellung und technische Validierung. Rechnerbezogene Sicherungen und Arbeitsmappen liegen außerhalb des Windows-Programmordners und sollen bei Updates erhalten bleiben.
 
-**Neu in 1.1.12:** Excel-Arbeitskopien heißen nach der Rechnungsnummer, beispielsweise `43.26-01-01.xlsm` bei Rechnungsnummer `43.26/01/01`. Wird die Nummer in Excel vor der PDF-Erstellung geändert, passt die Anwendung den Arbeitskopie-Dateinamen an. Eine bereits vorhandene Arbeitskopie wird **niemals überschrieben**.
+**Neu in 1.1.13:** Excel-Arbeitskopien heißen nach der Rechnungsnummer, beispielsweise `43.26-01-01.xlsm` bei Rechnungsnummer `43.26/01/01`. Wird die Nummer in Excel vor der PDF-Erstellung geändert, passt die Anwendung den Arbeitskopie-Dateinamen an. Eine bereits vorhandene Arbeitskopie wird **niemals überschrieben**.
+
+**Neu in 1.1.13:** Bei Programm- und Excel-Vorlagenupdates erscheint ein gut sichtbares Downloadfenster mit Fortschrittsbalken, Prozentwert, geladenen MB und Gesamtgröße. Nach dem Download zeigt es die Schritte zur Signatur-/Prüfsummenkontrolle, Entschlüsselung sowie (bei Excel) Sicherung und Installation. Die eigentliche Windows-Setup-Installation nutzt weiterhin die separate Anzeige des Installationsprogramms.
 
 **Seit 1.1.11:** Bei einer bereits existierenden Rechnungsnummer erscheint ein deutliches Warnfenster. Sicherste Wahl: Excel öffnen und Rechnungsnummer ändern. Eine noch nicht versendete/gebuchte Rechnung lässt sich nur nach mehreren Sicherheitsabfragen in einen gesonderten Ordner archivieren; **keine endgültige automatische Löschung**. Versendete oder gebuchte Rechnungen sind gegebenenfalls fachlich korrekt zu stornieren bzw. zu berichtigen.
 
