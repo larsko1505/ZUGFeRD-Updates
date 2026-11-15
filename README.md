@@ -36,11 +36,13 @@ Das Windows-Programm erstellt aus fünf verschieden aufgebauten Excel-Rechnungsv
 
 **Für den PC der Mutter ist kein GitHub-Konto erforderlich.** Version 1.1.8 enthält einen Fehler in der Versionsprüfung; dort ist zur Reparatur einmalig die manuelle Installation einer neueren Setup-Version nötig.
 
+**Excel-Vorlagen-Versionsanzeige:** Im Herausgeberprogramm **Publisher 1.0.1** wird die vorhandene Revision 1 als **1.1** angezeigt. Neue Vorlagen können als **1.2**, danach **1.3**, **1.4** usw. veröffentlicht werden. Die signierten GitHub-Updatefelder und ältere Empfängerprogramme verwenden aus Kompatibilitätsgründen weiterhin die internen Revisionszahlen 1, 2, 3 usw.; bei Empfängern kann daher weiterhin „Revision 2“ stehen. Diese Versionsangaben betreffen ausschließlich die Excel-Vorlagen, nicht die Rechnungsstudio-Programmversion.
+
 ## Eigenes Windows-Programm für den Herausgeber
 
-Seit dem 15. November 2026 steht auf dem vorbereiteten Herausgeber-PC zusätzlich der **ZUGFeRD Excel-Vorlagen Publisher 1.0.0** zur Verfügung: eine separat installierbare Windows-Oberfläche, die die bisherige zweistufige CMD-Veröffentlichung führt. Sie lässt die fünf Original-XLSM auswählen und prüfen, bereitet eine **höhere Revisionsnummer** verschlüsselt vor und veröffentlicht erst nach ausdrücklicher Doppelbestätigung auf GitHub. Die Signatur- und Prüfsummenkontrollen der vorhandenen Publishing-Skripte bleiben erhalten.
+Seit dem 15. November 2026 steht auf dem vorbereiteten Herausgeber-PC zusätzlich der **ZUGFeRD Excel-Vorlagen Publisher 1.0.1** zur Verfügung: eine separat installierbare Windows-Oberfläche, die die bisherige zweistufige CMD-Veröffentlichung führt. Sie lässt die fünf Original-XLSM auswählen und prüfen, bereitet eine **höhere Revisionsnummer** verschlüsselt vor und veröffentlicht erst nach ausdrücklicher Doppelbestätigung auf GitHub. Die Signatur- und Prüfsummenkontrollen der vorhandenen Publishing-Skripte bleiben erhalten.
 
-Die lokale Setup-EXE liegt auf dem Herausgeber-PC unter `D:\Dokumente\ZUGFeRD-Rechnungsstudio\Vorlagen_Publisher_Setup_1_0_0\setup_ausgabe\ZUGFeRD_Vorlagen_Publisher_1_0_0_Setup.exe`. **Sie enthält keine Herausgeberschlüssel oder Excel-Masterdateien und ist für die dort bereits eingerichtete Publishing-Umgebung gedacht.** Empfänger wie die Mutter installieren dieses Werkzeug nicht; sie aktualisieren Vorlagen weiterhin im Rechnungsstudio.
+Die lokale Setup-EXE liegt auf dem Herausgeber-PC unter `D:\Dokumente\ZUGFeRD-Rechnungsstudio\Vorlagen_Publisher_Setup_1_0_1\setup_ausgabe\ZUGFeRD_Vorlagen_Publisher_1_0_1_Setup.exe`. **Sie enthält keine Herausgeberschlüssel oder Excel-Masterdateien und ist für die dort bereits eingerichtete Publishing-Umgebung gedacht.** Empfänger wie die Mutter installieren dieses Werkzeug nicht; sie aktualisieren Vorlagen weiterhin im Rechnungsstudio.
 
 ## Fünf Excel-Mastervorlagen bearbeiten und veröffentlichen
 
