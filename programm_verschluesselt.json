@@ -1,14 +1,14 @@
 {
   "payload": {
     "schema": "zugferd-encrypted-program/1",
-    "version": "1.1.13",
-    "expires_utc": "2027-11-15T20:14:57.648129+00:00",
-    "url": "https://github.com/larsko1505/ZUGFeRD-Updates/releases/download/programm-v1.1.13/ZUGFeRD_1_1_13_Setup.zufexe",
-    "sha256": "fca754006405481f41fef2cf2f7f54382482d2a02ad7a60d8995492bac96159a",
-    "size_bytes": 187378738,
-    "nonce_b64": "qDWv+44MheMN317l",
-    "plain_sha256": "e2273a87c4dbc8c12f6dd130c19ab8a140ccc44296ee7d98bc251b9a1a92d8ee",
-    "plain_size_bytes": 187378722
+    "version": "1.1.14",
+    "expires_utc": "2027-11-15T21:05:23.375139+00:00",
+    "url": "https://github.com/larsko1505/ZUGFeRD-Updates/releases/download/programm-v1.1.14/ZUGFeRD_1_1_14_Setup.zufexe",
+    "sha256": "46fb8febc839b355ba04c46c95c606f26710ef912db23f45fb37fef3d71a3869",
+    "size_bytes": 187386279,
+    "nonce_b64": "n39lexM+DoK88+7X",
+    "plain_sha256": "f71d0e7a96f78fe63ad9087c9c833f52e7d054848fba7421df9b47e67704e212",
+    "plain_size_bytes": 187386263
   },
-  "signature": "AL+W0T0BlTo7q+utt1C4cPd7kvi+Ca4NdBIeTW4/e28ICKQS0X1g514m8FVa9ENaaqQnxxOs6ydh2y/FTTAyDQ=="
+  "signature": "rnXCgDbqRJo3d1XphRG5dsH2boRVlb1s1WbunCyroNLVqKRlSa5HiJHJIv5X3hwvMRWMKlslzHtEAguSUoNIBA=="
 }
