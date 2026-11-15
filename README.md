@@ -1,6 +1,6 @@
 # ZUGFeRD Rechnungsstudio – Updates
 
-**Aktueller Programmstand: 1.1.13 (15. November 2026)**
+**Aktueller Programmstand: 1.1.14 (15. November 2026)**
 
 Dieses GitHub-Repository ist der **öffentliche Verteilungskanal für verschlüsselte Programm- und Excel-Vorlagenupdates** des ZUGFeRD Rechnungsstudios für Hansen Transporte. Die Original-Excel-Dateien und der ausführbare Windows-Installer werden **nicht unverschlüsselt** als öffentliche Release-Dateien bereitgestellt.
 
@@ -8,7 +8,7 @@ Dieses GitHub-Repository ist der **öffentliche Verteilungskanal für verschlüs
 
 | Bestandteil | Freigabe | Inhalt |
 | --- | --- | --- |
-| Rechnungsstudio | [Programm 1.1.13](https://github.com/larsko1505/ZUGFeRD-Updates/releases/tag/programm-v1.1.13) | AES-256-GCM-verschlüsselter Setup-Download `.zufexe` |
+| Rechnungsstudio | [Programm 1.1.14](https://github.com/larsko1505/ZUGFeRD-Updates/releases/tag/programm-v1.1.14) | AES-256-GCM-verschlüsselter Setup-Download `.zufexe` |
 | Excel-Rechnungsvorlagen | [Vorlagenrevision 1](https://github.com/larsko1505/ZUGFeRD-Updates/releases/tag/vorlagen-v1) | AES-256-GCM-verschlüsseltes Paket mit fünf `.xlsm`-Vorlagen (`.zufenc`) |
 
 Die jeweils gültigen **digital signierten** Updateinformationen liegen in [`programm_verschluesselt.json`](programm_verschluesselt.json) und [`vorlagen_verschluesselt.json`](vorlagen_verschluesselt.json). Die Anwendung prüft die Ed25519-Signatur, Versionsnummer und SHA-256-Prüfsummen. Zum Entschlüsseln wird ein einmalig eingerichteter, **nicht im Installer enthaltener** Schlüssel benötigt.
@@ -18,6 +18,8 @@ Die jeweils gültigen **digital signierten** Updateinformationen liegen in [`pro
 ## Was das Rechnungsstudio kann
 
 Das Windows-Programm erstellt aus fünf verschieden aufgebauten Excel-Rechnungsvorlagen ZUGFeRD-/Factur-X-Rechnungen mit eingebetteter XML nach EN 16931 und PDF/A-3. Es unterstützt Excel-Arbeitskopien, PDF-/XML-Erstellung und technische Validierung. Rechnerbezogene Sicherungen und Arbeitsmappen liegen außerhalb des Windows-Programmordners und sollen bei Updates erhalten bleiben.
+
+**Neu in 1.1.14 – neue Rechnungen immer leer:** Der Button „Neue Rechnung“ erstellt nun jedes Mal eine **neue leere Excel-Arbeitskopie**. Selbst wenn die aktive Excel-Mastervorlage noch Daten einer alten Rechnung enthält, entfernt die Anwendung in der Kopie ausschließlich die bisherigen Rechnungsnummern, Rechnungsdaten, Fahrerangaben und Positions-Eingaben. **Formeln, Preislisten, Layout, Bilder und Makros bleiben erhalten.** Die Kopie bekommt zunächst einen eindeutigen temporären Namen. Nach Eingabe der neuen Nummer sowie Speichern und Schließen in Excel wird sie nach Rechnungsnummer benannt (z. B. `43.26-77-01.xlsm`). Existiert bereits eine Arbeitskopie unter dieser Nummer, wird sie **nicht überschrieben**. Falls das Programm das Schließen von Excel nicht automatisch erkennt, erfolgt die Umbenennung spätestens beim späteren PDF-Erstellungsschritt. Bereits erstellte Rechnungen und Originalvorlagen werden nicht verändert. **Für diese Korrektur ist ein Softwareupdate auf 1.1.14 nötig, kein neues Vorlagenrelease.**
 
 **Neu in 1.1.13:** Excel-Arbeitskopien heißen nach der Rechnungsnummer, beispielsweise `43.26-01-01.xlsm` bei Rechnungsnummer `43.26/01/01`. Wird die Nummer in Excel vor der PDF-Erstellung geändert, passt die Anwendung den Arbeitskopie-Dateinamen an. Eine bereits vorhandene Arbeitskopie wird **niemals überschrieben**.
 
