@@ -1,12 +1,12 @@
 {
   "payload": {
     "schema": "zugferd-encrypted-templates/1",
-    "revision": 4,
-    "expires_utc": "2027-11-16T15:45:20.310716+00:00",
-    "url": "https://github.com/larsko1505/ZUGFeRD-Updates/releases/download/vorlagen-v4/vorlagen-v4.zufenc",
-    "sha256": "2b2b15ef3c807ad4b1cd8b1cb589fdf0de4cb52e534ee9f10be0bfb56f08efe8",
-    "size_bytes": 432204,
-    "nonce_b64": "LQgmk+eVLO1XsbeX"
+    "revision": 5,
+    "expires_utc": "2027-11-21T11:11:29.381281+00:00",
+    "url": "https://github.com/larsko1505/ZUGFeRD-Updates/releases/download/vorlagen-v5/vorlagen-v5.zufenc",
+    "sha256": "b83f02cafbb70064771b60174ab23493029bf627c69d8e58b7d5110887e76d0e",
+    "size_bytes": 432814,
+    "nonce_b64": "H5YUf93cBwFYFcs8"
   },
-  "signature": "UtZIK1k4WaeZ6AUoPP53u7z4Dyq7Zt5j8nyFlcOExDQwh4g3B94Dk5b9fcgj9iOmPxLazkavM51MgRcuiiY/BQ=="
+  "signature": "wjh0Fs2NMxMVbora6uk8KorPQIvt1ERN3ZF9MiJ+ndBbtILWv1vKVDRFnpPQwQl7h9A6kKE/7/iVLYqTantpAQ=="
 }
